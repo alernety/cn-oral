@@ -1,3 +1,4 @@
+<!-- Add LaTeX support to Markdown
 <script type="text/javascript"
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
 </script>
@@ -16,6 +17,7 @@
     }
   });
 </script>
+ -->
 
 ## ORALE CALCOLO NUMERICO
 
