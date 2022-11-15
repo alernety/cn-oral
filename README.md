@@ -224,7 +224,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   Idea base ottenere una fattorizzazione della matrice di coeficienti
   $A = F_1 * F_2 * ... * F_k$ con $F_i \in R^{n \times n}$
-  dove i fattori ($F_i$) sono matrici nonsingolari. Soluzione può
+  dove i fattori ( $F_i$ ) sono matrici nonsingolari. Soluzione può
   essere calcolato, risolvendo seguenti sistemi lineari:
 
   $$F_1 * x_1 = b$$
