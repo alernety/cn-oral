@@ -281,7 +281,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   1. $T_k(x)$ è un polinomio di grado esatto $k$,
   2. Il coefficiente principale di $T_k(x)$ è $2^{k - 1},\ \ \ \ k = 1, 2, ...$
-  3. La famiglia di polinomi {$\hat{T}_k$}, in cui
+  3. La famiglia di polinomi { $\hat{T}_k$ }, in cui
      $$\hat{T}_0(x) = T_0(x),\ \ \ \ \hat{T}_k(x) = 2^{1 - k}T_k(x),\ \ \ \ k = 1, 2, ...$$
   4. Ponendo $x = \cos \theta,\ \ \ \ \theta \in [0,\pi].$ per parametrizzare
      i punti dell'intervallo [-1,1] rispetto a $\theta$, e considerando che
