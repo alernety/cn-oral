@@ -171,14 +171,16 @@ ha fatto quelle domande, quindi è più probabile che chieda.
     una di questi due (sono equivalenti, osservando che, in virtù del teorema
     4.10, $s'''_3\vert_{x_{t-1},x_t}(x) \in \prod_0$):
     - $$
-      s'''_3\vert_{[x_0,x_1]}(x_1) = s'''_3\vert_{[x_1,x_2]}(x_1),\ \ \ \ \
-      s'''_3\vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = s'''_3\vert_{[x_{n-1},x_{n}]}(x_{n-1})
+      s'''_3 \vert_{[x_0,x_1]}(x_1) = \
+      s'''_3 \vert_{[x_1,x_2]}(x_1),\ \ \ \ \
+      s'''_3 \vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = \
+      s'''_3 \vert_{[x_{n-1},x_{n}]}(x_{n-1})
       $$
     - $$
-      \frac{s''_3(x_1) - s''_3(x_0)}{x_1 - x_0} \
-      = \frac{s''_3(x_2) - s''_3(x_1)}{x_2 - x_1},\ \ \ \ \
-      \frac{s''_3(x_{n-1}) - s''_3(x_{n-2})}{x_{n-1} - x_{n-2}} \
-      = \frac{s''_3(x_n) - s''_3(x_{n-1})}{x_n - x_{n-1}}
+      \frac{s''_3(x_1) - s''_3(x_0)}{x_1 - x_0} = \
+      \frac{s''_3(x_2) - s''_3(x_1)}{x_2 - x_1},\ \ \ \ \
+      \frac{s''_3(x_{n-1}) - s''_3(x_{n-2})}{x_{n-1} - x_{n-2}} = \
+      \frac{s''_3(x_n) - s''_3(x_{n-1})}{x_n - x_{n-1}}
       $$
 
   </details>
