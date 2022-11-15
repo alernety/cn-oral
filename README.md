@@ -302,7 +302,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   ### Definizione
 
-  Data una matrice $A = (a\_{ij}) \in \R^{x \times n}, si dice che essa è:
+  Data una matrice $A = (a\_{ij}) \in \R^{x \times n}$, si dice che essa è:
 
   - diagonale dominate per righe se
     $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ij}\vert ,\ \ \ \ i = 1, ..., n$$
@@ -395,7 +395,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   La dimostrazione dei primi due punti è immediata. Riguardo al'ultimo punto,
   osserviamo che dal secondo segue che $\lambda = 1$ è autovalore di $S^T$ e,
-  quindi, di $S$. Osservando che $p(S) \leq \\vert S\\vert $ per ogni norma indotta su
+  quindi, di $S$. Osservando che $p(S) \leq \\vert S\\vert$ per ogni norma indotta su
   matrice, la tesi si completa in virtù del punto $1$, da cui si ottiene:
   $1 = \\vert e^T S\\vert_{\infty} = \\vert S\\vert_1$.
 
