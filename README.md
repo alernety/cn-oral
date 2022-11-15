@@ -278,8 +278,8 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   1. $T_k(x)$ è un polinomio di grado esatto $k$,
   2. Il coefficiente principale di $T_k(x)$ è $2^{k - 1},\ \ \ \ k = 1, 2, ...$
-  3. La famiglia di polinomi {$\^{T}_k$}, in cui
-     $$\^{T}_0(x) = T_0(x),\ \ \ \ \^{T}_k(x) = 2^{1 - k}T_k(x),\ \ \ \ k = 1, 2, ...$$
+  3. La famiglia di polinomi {$\hat{T}_k$}, in cui
+     $$\hat{T}_0(x) = T_0(x),\ \ \ \ \hat{T}_k(x) = 2^{1 - k}T_k(x),\ \ \ \ k = 1, 2, ...$$
   4. Ponendo $x = \cos \theta,\ \ \ \ \theta \in [0,\pi].$ per parametrizzare
      i punti dell'intervallo [-1,1] rispetto a $\theta$, e considerando che
      $\cos(k\theta+\theta) + \cos(k\theta-\theta) = 2\cos(k\theta)\cos(\theta)$,
@@ -338,7 +338,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 - <details><summary id="google-pagerank">Metodo iterativo Google pagerank (<b>X4</b>)</summary>
 
   Prolbema può essere riformulata in seguente sistema lineare:
-  $$A\^{x} \equiv (I - pS)\^{x} = \frac{1-p}{n}e \equiv b$$
+  $$A\hat{x} \equiv (I - pS)\hat{x} = \frac{1-p}{n}e \equiv b$$
   Dalla dimensione di $A$ è impensabile applicare la fattorizzazione diretta.
   La matrice $A$ ha una importate caratteristica, essere scritta in forma:
   $$A = I - B,\ \ \ \ B \geq 0,\ \ \ \ \rho(B) < 1$$
@@ -375,7 +375,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
 - <details><summary id="raggio-spettrale">Raggio spettrale (<b>X4</b>)</summary>
 
-  $$ \^{x} = (H + v \Delta^T)\^{x} \equiv S\^{x},$$
+  $$ \hat{x} = (H + v \Delta^T)\hat{x} \equiv S\hat{x},$$
   dove
   $$v = \frac{1}{n}e,\ \ \ \ e = (1, ..., 1)^T \in \R^n.$$
 
@@ -471,13 +471,13 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   $A$ è fattorizzabile $LU$. Inoltre il fattore $U$ può essere scritto
   nella forma
-  $$U = D\^{U}$$
-  con $D$ diagonale e $\^{U}$ triangolare superiore a diagonale unitaria.
+  $$U = D\hat{U}$$
+  con $D$ diagonale e $\hat{U}$ triangolare superiore a diagonale unitaria.
   Essendo, inoltre $A = A^T$, segue pertanto che:
-  $$LD\^{U} = A = A^T = (LD\^{U})^T = \^{U}^T D L^T$$
-  Per l'unicità della fattorizzazione $LU$, essendo $\^{U}^T$ triangolare
+  $$LD\hat{U} = A = A^T = (LD\hat{U})^T = \hat{U}^T D L^T$$
+  Per l'unicità della fattorizzazione $LU$, essendo $\hat{U}^T$ triangolare
   inferiore a diagonale unitaria e $D L^T$ triangolare superiore, segue quindi
-  che $\^{U}^T = L$. Pertanto la fattorizzazione di teorema è ben definita.
+  che $\hat{U}^T = L$. Pertanto la fattorizzazione di teorema è ben definita.
   Rimane da dimostrare che gli elementi diagonali di $D$ sono positivi. In
   virtù del Teorema 3.5, basta dimostrare che $D$ è sdp. Evidentemente, $D$
   è simmetrica. Inoltre, comunque si fissi $x \neq 0$, esiste ed è unico il
@@ -557,10 +557,10 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Data la matrice $A$, esistono:
 
   - $Q \in \R^{m \times m}$, ortogonale
-  - $\^{R} \in \R^{n \times n}$, triangolare superiore e non singolare
+  - $\hat{R} \in \R^{n \times n}$, triangolare superiore e non singolare
 
   tali che:
-  $$A = QR \equiv Q\binom{\^{R}}{O}$$
+  $$A = QR \equiv Q\binom{\hat{R}}{O}$$
 
   </details>
 
