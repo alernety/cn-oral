@@ -89,25 +89,25 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   verrà condotta sugli errori assoluti. Sono dunque:
 
   $$p(x)=\sum_{k=0}^n f_k L_{k n}(x)$$
-  $$p'(x)=\sum_{k=0}^n f'_k L_{k n}(x)$$
+  $$p'(x)=\sum_{k=0}^n f_k' L_{k n}(x)$$
 
   i polinomi interpolanti, esperessi nella forma di Lagrange, costruiti a
-  partire dai dati esatti $f_i$ e quelli perturbati $f'_i$.
+  partire dai dati esatti $f_i$ e quelli perturbati $f_i'$.
   Si ottiene pertanto:
 
   $$
   \begin{align*}
   \vert p(x) - p'(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
-  & \leq {\vert Lagrange\vert \ e\ \vert (f_k - f'_k)\vert } \\
-  & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - f'_k)} \\
+  & \leq {\vert Lagrange\vert \ e\ \vert (f_k - f_k')\vert } \\
+  & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - f_k')} \\
   & = \{{\lambda\ =\ \sum\ Lagrange}\} \\
-  & = {\lambda_n(x) * max_k(f_k - f'_k)}\\
+  & = {\lambda_n(x) * max_k(f_k - f_k')}\\
   \end{align*}
   $$
 
   in qui $\lambda_n(x)$ è detta funzione di Lebesgue.
 
-  $$\vert \vert p - p'\vert \vert  \leq \vert \vert \lambda_n\vert \vert  * \vert \vert f - f'\vert \vert  \equiv \Lambda_n * \vert \vert f - f'\vert \vert $$
+  $$\Vert p - p'\Vert  \leq \Vert \lambda_n\Vert  * \Vert f - f'\Vert  \equiv \Lambda_n * \Vert f - f'\Vert $$
 
   La costante di Lebesgue $\Lambda_n$, che misura la massima amplificazione
   sul risultato dell'errore sui dati di ingresso, definisce, pertanto,
@@ -144,7 +144,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   ### Teorema (4.10)
 
   Se $s_m(x)$ è una spline di grado $m$ sulla partizione $\Delta$, allora
-  $s'_m(x)$ è una spline di grado $m - 1$ sulla stessa partizione.
+  $s_m'(x)$ è una spline di grado $m - 1$ sulla stessa partizione.
 
   ### Teorema (4.11?) dimensionalità
 
@@ -158,29 +158,29 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   ### Proprieta delle spline cubiche
 
   1. Spline **naturale**
-     $$s''_3(a) = 0,\ \ \ \ s''_3(b) = 0$$
+     $$s_3''(a) = 0,\ \ \ \ s_3''(b) = 0$$
 
   2. Spline **completa**
-     $$s'_3(a) = f'(a),\ \ \ \ s'_3(b) = f'(b)$$
+     $$s_3'(a) = f'(a),\ \ \ \ s_3'(b) = f'(b)$$
 
   3. Spline **periodica**
-     $$s'_3(a) = s'_3(b),\ \ \ \ s''_3(a) = s''_3(b)$$
+     $$s_3'(a) = s_3'(b),\ \ \ \ s_3''(a) = s_3''(b)$$
 
   - Condizioni **not-a-knot**
     In questo caso, per evitare altre 3 condizioni precedenti, basta che vale
     una di questi due (sono equivalenti, osservando che, in virtù del teorema
-    4.10, $s'''_3\vert_{x_{t-1},x_t}(x) \in \prod_0$):
+    4.10, $s_3'''\vert_{x_{t-1},x_t}(x) \in \prod_0$):
     - $$
-      s'''_3 \vert_{[x_0,x_1]}(x_1) = \
-      s'''_3 \vert_{[x_1,x_2]}(x_1),\ \ \ \ \
-      s'''_3 \vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = \
-      s'''_3 \vert_{[x_{n-1},x_{n}]}(x_{n-1})
+      s_3'''\vert_{[x_0,x_1]}(x_1) = \
+      s_3'''\vert_{[x_1,x_2]}(x_1),\ \ \ \ \
+      s_3'''\vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = \
+      s_3'''\vert_{[x_{n-1},x_{n}]}(x_{n-1})
       $$
     - $$
-      \frac{s''_3(x_1) - s''_3(x_0)}{x_1 - x_0} = \
-      \frac{s''_3(x_2) - s''_3(x_1)}{x_2 - x_1},\ \ \ \ \
-      \frac{s''_3(x_{n-1}) - s''_3(x_{n-2})}{x_{n-1} - x_{n-2}} = \
-      \frac{s''_3(x_n) - s''_3(x_{n-1})}{x_n - x_{n-1}}
+      \frac{s_3''(x_1) - s_3''(x_0)}{x_1 - x_0} = \
+      \frac{s_3''(x_2) - s_3''(x_1)}{x_2 - x_1},\ \ \ \ \
+      \frac{s_3''(x_{n-1}) - s_3''(x_{n-2})}{x_{n-1} - x_{n-2}} = \
+      \frac{s_3''(x_n) - s_3''(x_{n-1})}{x_n - x_{n-1}}
       $$
 
   </details>
@@ -239,7 +239,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
    </details>
 
-- <details><summary>Newton cotes (<b>X4</b>)</summary>
+- <details><summary>Newton-Cotes (<b>X4</b>)</summary>
 
   Si considera l'approssimazione di $f(x)$ fornita dal polinomio interpolante
   su $n+1$ ascisse equidistanti.
@@ -250,7 +250,6 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Considerando la forma di Lagrange di polinomio, si ha:
 
   $$
-  \\
   I(f) \approx \int_a^b \sum_{k=0}^{n}(f_k L_{kn}(x))dx\
   =\sum_{k=0}^n(f_k \int_a^b L_{kn}(x)dx\\
   = h \sum_{k=0}^n(f_k \int_a^b \prod_{j=0,j!=k}^{n}\frac{t - j}{k - j}dt)\\
