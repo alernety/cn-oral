@@ -448,6 +448,12 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   Se $A$ è sdp, allora è fattorizzabile $LU$.
 
+  #### <span id="sdp-LU-fattorizzabile">Dimostrazione</span>
+
+  Dal Lemma 3.7, tutte le sottomatrici principali sono
+  sdp e quindi, dal Lemma 3.8, segue che i corrispondenti minori
+  principali sono tutti non nulli.
+
   ### Teorema 3.5
 
   Gli elementi diagonali di una matrice sdp sono positivi.
@@ -461,7 +467,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   - $L$ triangolare inferiore a diagonale unitaria.
   - $D$ diagonale con elementi diagonali positivi.
 
-  ### Dimostrazione
+  #### Dimostrazione
 
   $A$ è fattorizzabile $LU$. Inoltre il fattore $U$ può essere scritto
   nella forma
@@ -519,7 +525,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   $$
   \vert \varepsilon_y\vert  \approx \left\vert  f'(x)\frac{x}{y}\right\vert  \vert \varepsilon_x\vert \
-  \equiv \kappa \vert \varepsilon_x\vert 
+  \equiv \kappa \vert \varepsilon_x\vert
   $$
 
   Il fattore di amplificazione $\kappa$, che misura di quanto gli errori
@@ -587,8 +593,12 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   </details>
 
-- <details><summary>dim sdp &rArr; LU (<b>X2</b>)</summary>
+- <details><summary>Dimostrazione sdp &rArr; LU (<b>X2</b>)</summary>
+
+  ### <a href="#sdp-LU-fattorizzabile">Dimostrazione Teorema 3.4</a>
+
   </details>
+
 - <details><summary>def splitting regolare di matrice (<b>X2</b>)</summary>
   </details>
 - <details><summary>metodo di newton (dim convergenza, molteplicità, Aitken) (<b>X2</b>)</summa
