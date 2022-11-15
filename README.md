@@ -170,12 +170,14 @@ ha fatto quelle domande, quindi è più probabile che chieda.
     In questo caso, per evitare altre 3 condizioni precedenti, basta che vale
     una di questi due (sono equivalenti, osservando che, in virtù del teorema
     4.10, $s_3'''\vert_{x_{t-1},x_t}(x) \in \prod_0$):
+
     $$
       s_3'''\vert_{[x_0,x_1]}(x_1) = \
       s_3'''\vert_{[x_1,x_2]}(x_1),\ \ \ \ \
       s_3'''\vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = \
       s_3'''\vert_{[x_{n-1},x_{n}]}(x_{n-1})
     $$
+
     $$
       \frac{s_3''(x_1) - s_3''(x_0)}{x_1 - x_0} = \
       \frac{s_3''(x_2) - s_3''(x_1)}{x_2 - x_1},\ \ \ \ \
