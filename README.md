@@ -97,8 +97,8 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   $$
   \begin{align*}
-  |p(x) - p'(x)| & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
-  & \leq {|Lagrange|\ e\ |(f_k - f'_k)|} \\
+  \vert p(x) - p'(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
+  & \leq {\vert Lagrange\vert \ e\ \vert (f_k - f'_k)\vert } \\
   & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - f'_k)} \\
   & = \{{\lambda\ =\ \sum\ Lagrange}\} \\
   & = {\lambda_n(x) * max_k(f_k - f'_k)}\\
@@ -107,7 +107,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   in qui $\lambda_n(x)$ è detta funzione di Lebesgue.
 
-  $$||p - p'|| \leq ||\lambda_n|| * ||f - f'|| \equiv \Lambda_n * ||f - f'||$$
+  $$\vert \vert p - p'\vert \vert  \leq \vert \vert \lambda_n\vert \vert  * \vert \vert f - f'\vert \vert  \equiv \Lambda_n * \vert \vert f - f'\vert \vert $$
 
   La costante di Lebesgue $\Lambda_n$, che misura la massima amplificazione
   sul risultato dell'errore sui dati di ingresso, definisce, pertanto,
@@ -131,7 +131,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   esattamente, se:
 
   1. $s_m(x) \in C^{m-1}$ sull'intervallo $[a,b]$, e inoltre,
-  2. $s_m|_{[x_{i-1}, x_i]}(x) \in \prod_m,\ \ \ \ i = 1, ..., n$
+  2. $s_m\vert_{[x_{i-1}, x_i]}(x) \in \prod_m,\ \ \ \ i = 1, ..., n$
 
   Allora diremo che $s_m(x)$ è una **_spline di grado m_** sulla partizione
   $\Delta$. Se, inoltre
@@ -169,10 +169,10 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   - Condizioni **not-a-knot**
     In questo caso, per evitare altre 3 condizioni precedenti, basta che vale
     una di questi due (sono equivalenti, osservando che, in virtù del teorema
-    4.10, $s'''_3|_{x_{t-1},x_t}(x) \in \prod_0$):
+    4.10, $s'''_3\vert_{x_{t-1},x_t}(x) \in \prod_0$):
     - $$
-      s'''_3|_{[x_0,x_1]}(x_1) = s'''_3|_{[x_1,x_2]}(x_1),\ \ \ \ \
-      s'''_3|_{[x_{n-2},x_{n-1}]}(x_{n-1}) = s'''_3|_{[x_{n-1},x_{n}]}(x_{n-1})
+      s'''_3\vert_{[x_0,x_1]}(x_1) = s'''_3\vert_{[x_1,x_2]}(x_1),\ \ \ \ \
+      s'''_3\vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = s'''_3\vert_{[x_{n-1},x_{n}]}(x_{n-1})
       $$
     - $$
       \frac{s''_3(x_1) - s''_3(x_0)}{x_1 - x_0} \
@@ -302,9 +302,9 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Data una matrice $A = (a\_{ij}) \in \R^{x \times n}, si dice che essa è:
 
   - diagonale dominate per righe se
-    $$|a_{ii}| > \sum_{j \neq i}|a_{ij}|,\ \ \ \ i = 1, ..., n$$
+    $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ij}\vert ,\ \ \ \ i = 1, ..., n$$
   - diagonale dominate per colonne se
-    $$|a_{ii}| > \sum_{j \neq i}|a_{ji}|,\ \ \ \ i = 1, ..., n$$
+    $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ji}\vert ,\ \ \ \ i = 1, ..., n$$
 
   ### Lemma 3.4
 
@@ -392,9 +392,9 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   La dimostrazione dei primi due punti è immediata. Riguardo al'ultimo punto,
   osserviamo che dal secondo segue che $\lambda = 1$ è autovalore di $S^T$ e,
-  quindi, di $S$. Osservando che $p(S) \leq \|S\|$ per ogni norma indotta su
+  quindi, di $S$. Osservando che $p(S) \leq \\vert S\\vert $ per ogni norma indotta su
   matrice, la tesi si completa in virtù del punto $1$, da cui si ottiene:
-  $1 = \|e^T S\|_{\infty} = \|S\|_1$.
+  $1 = \\vert e^T S\\vert_{\infty} = \\vert S\\vert_1$.
 
   </details>
 
@@ -422,9 +422,9 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Si ricava:
 
   $$
-  |\varepsilon_y| \leq \frac{|x_1| + |x_2|}{|x_1 + x_2|}\varepsilon_x\
+  \vert \varepsilon_y\vert  \leq \frac{\vert x_1\vert  + \vert x_2\vert }{\vert x_1 + x_2\vert }\varepsilon_x\
   \equiv \kappa \varepsilon_x,\ \ \ \ \varepsilon_x\
-  = max\{|\varepsilon_1|, |\varepsilon_2|\}
+  = max\{\vert \varepsilon_1\vert , \vert \varepsilon_2\vert \}
   $$
 
   </details>
@@ -499,7 +499,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   ### Teorema 1.4
 
   Se $x \in L$, $x \neq 0$, allora
-  $$fl(x) = x(1 + \varepsilon_x),\ \ \ \ |\varepsilon_x| \leq u$$
+  $$fl(x) = x(1 + \varepsilon_x),\ \ \ \ \vert \varepsilon_x\vert  \leq u$$
   dove
 
   $$
@@ -518,8 +518,8 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 - <details><summary>Condizionamento (di un problema) cap 1 (<b>X2</b>)</summary>
 
   $$
-  |\varepsilon_y| \approx \left| f'(x)\frac{x}{y}\right| |\varepsilon_x|\
-  \equiv \kappa |\varepsilon_x|
+  \vert \varepsilon_y\vert  \approx \left\vert  f'(x)\frac{x}{y}\right\vert  \vert \varepsilon_x\vert \
+  \equiv \kappa \vert \varepsilon_x\vert 
   $$
 
   Il fattore di amplificazione $\kappa$, che misura di quanto gli errori
