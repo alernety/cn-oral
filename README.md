@@ -174,25 +174,35 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   verrà condotta sugli errori assoluti. Sono dunque:
 
   $$p(x)=\sum_{k=0}^n f_k L_{k n}(x)$$
-  $$p'(x)=\sum_{k=0}^n f_k' L_{k n}(x)$$
+  $$\tilde{p}(x)=\sum_{k=0}^n \tilde{f_k} L_{k n}(x)$$
 
   i polinomi interpolanti, esperessi nella forma di Lagrange, costruiti a
-  partire dai dati esatti $f_i$ e quelli perturbati $f_i'$.
+  partire dai dati esatti $f_i$ e quelli perturbati $\tilde{f_i}$.
   Si ottiene pertanto:
 
   $$
   \begin{align*}
-  \vert p(x) - p'(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
-  & \leq {\vert Lagrange\vert \ e\ \vert (f_k - f_k')\vert } \\
-  & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - f_k')} \\
+  \vert p(x) - \tilde{p}(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
+  & \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\
+  & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\
   & = \{{\lambda\ =\ \sum\ Lagrange}\} \\
-  & = {\lambda_n(x) * max_k(f_k - f_k')}\\
+  & = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\
   \end{align*}
   $$
 
   in qui $\lambda_n(x)$ è detta funzione di Lebesgue.
 
-  $$\Vert p - p'\Vert  \leq \Vert \lambda_n\Vert  * \Vert f - f'\Vert  \equiv \Lambda_n * \Vert f - f'\Vert $$
+  Pertanto definiamo la norma ($\infty$) in $C^{(0)}$
+
+  $$\|f\| = \underset{a \leq x \leq b}{max}|f(x)|$$
+
+  allora
+
+  $$
+  \Vert p - \tilde{p}\Vert
+    \leq \Vert \lambda_n\Vert  * \Vert f - \tilde{f}\Vert
+    \equiv \Lambda_n * \Vert f - \tilde{f}\Vert
+  $$
 
   La costante di Lebesgue $\Lambda_n$, che misura la massima amplificazione
   sul risultato dell'errore sui dati di ingresso, definisce, pertanto,
