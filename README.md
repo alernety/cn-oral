@@ -84,6 +84,112 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   ### Condizionamento del problema della valutazione del polinomio interpolante
 
+  In questa sezione, studieremo in che modo perturbazioni sui dati del sistema
+  lineare (3.1), con $m = n$, si ripercuotono sulla sua soluzione. Più in
+  dettaglio, studieremo il sistema lineare perturbato
+
+  $$(A+\Delta A)(x+\Delta x)=b+\Delta b$$
+
+  in cui le perturbazioni sui dati, $\Delta A$ e $\Delta b$, determinano la
+  perturbazione $\Delta x$ sulla soluzione di sistema lineare. Per semplicità di
+  esposizione, senza tuttavia perdere in generalità. considereremo il caso in cui
+  i dati del problema dipendono da un parametro scalare di perturbazione
+  $\varepsilon \approx 0$
+
+  $$
+  A(\varepsilon) = A + \varepsilon F, F \in \R^{n \times n}
+   \Longrightarrow
+   \Delta A = \varepsilon F,
+  $$
+
+  $$
+  b(\varepsilon) = b + \varepsilon f, f \in \R
+   \Longrightarrow
+   \Delta b = \varepsilon f,
+  $$
+
+  Conseguentemente la sistema lineare perturbato sarà
+
+  $$A(\varepsilon)x(\varepsilon)=b(\varepsilon)$$
+
+  in qui $x(\varepsilon)$ è la corrispondente soluzione del sistema lineare
+  perturbato. Osserviamo che
+
+  $$A(0) = A, b(0) = b \Longrightarrow x(0) = x$$
+
+  Sviluppando nell'origine, si ottiene pertanto che, per $\varepsilon$
+  sufficientemente piccolo
+
+  $$
+  x(\varepsilon)
+   = x + \varepsilon \dot{x}(0) + O(\varepsilon^2)
+   \approx x + \varepsilon \dot{x}(0)
+  $$
+
+  ovvero,
+
+  $$\Delta x \equiv x(\varepsilon) - x \approx \varepsilon \dot{x}(0)$$
+
+  Dalla sistema lineare perturbato segue, inoltre (derivata del prodotto)
+  $(Ax)' = b' \rightarrow A'x + Ax' = b'$
+
+  $$
+  \dot{A}(\varepsilon)x(\varepsilon) + A(\varepsilon)\dot{x}(\varepsilon)
+   = \dot{b}(\varepsilon)
+  $$
+
+  e, quindi
+
+  $$\dot{A}(0)x + A\dot{x}(0)= \dot{b}(0)$$
+
+  Considerando il caso in cui i dati del problema dipendono da un parametro
+  scalare di perturbazione, questa permette di ottenere
+
+  $$\dot{x}(0) = A^{-1}(f-Fx)$$
+
+  Sostituendo in sviluppo nell'origine con formula precedente si ottiene infine che:
+
+  $$
+  \frac{\|\Delta x\|}{\|x\|}
+    \approx \frac{\|A^{-1}(\varepsilon f - \varepsilon Fx)\|}{\|x\|}
+    \equiv \frac{\|A^{-1}(\Delta b - \Delta Ax)\|}{\|x\|}
+    \leq \frac{\|A^{-1}\|(\|\Delta b\| + \|\Delta A\| \|x\|)}{\|x\|}
+    =
+  $$
+
+  $$
+    = \|A^{-1}\|\left(\frac{\|\Delta b\|}{\|x\|} + \|\Delta A\|\right)
+    = \|A\|\|A^{-1}\| \left(
+      \frac{\|\Delta b\|}{\|A\| \cdot \|x\|}
+      + \frac{\|\Delta A\|}{\|A\|}
+    \right)
+    \leq
+  $$
+
+  $$
+    \leq \|A\|\|A^{-1}\| \left(
+      \frac{\|\Delta b\|}{\|b\|}
+      + \frac{\|\Delta A\|}{\|A\|}
+    \right)
+  $$
+
+  Considerato che:
+
+  - $\frac{\|\Delta x\|}{\|x\|}$ può essere, in senso lato, assimilato ad una
+    sorta di “errore relativo” sul risultato e, similmente.
+  - $\frac{\|\Delta A\|}{\|A\|}$ e $\frac{\|\Delta b\|}{\|b\|}$ possono essere
+    assimilati a corrispondenti “errori relativi’ sui dati di ingresso.
+
+  si ottiene che la quantità
+
+  $$\kappa(A) \equiv \|A\| \cdot \|A^{-1}\|$$
+
+  definisce il numero di condizionamento del problema.
+
+  </details>
+
+- <details><summary>Condizionamento del problema in approssimazione (<b>X5</b>)</summary>
+
   Consideriamo che le ascisse come parametri fissati, riguardando le $f_i$ come
   gli unici dati di ingresso. In questo caso l'analisi di **_condizionamento_**
   verrà condotta sugli errori assoluti. Sono dunque:
