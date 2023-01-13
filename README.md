@@ -26,28 +26,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   la definizione. Cosi facendo, si perviene al seguente sistema di equazioni
   lineari $Va = f$ in cui:
 
-  $$
-  \begin{pmatrix}
-    x_0^0  & x_0^1  & ... & x_0^n  \\
-    x_1^0  & x_1^1  & ... & x_1^n  \\
-    \vdots & \vdots &     & \vdots \\
-    x_n^0  & x_n^1  & ... & x_n^n
-  \end{pmatrix},\ \ \ \ \
-  a =
-  \begin{pmatrix}
-    a_0 \\
-    a_1 \\
-    \vdots \\
-    a_n
-  \end{pmatrix},\ \ \ \ \
-  f =
-  \begin{pmatrix}
-    f_0 \\
-    f_1 \\
-    \vdots \\
-    f_n
-  \end{pmatrix}
-  $$
+  $$\begin{pmatrix}x_0^0 & x_0^1 & ... & x_0^n \\x_1^0 & x_1^1 & ... & x_1^n \\ \vdots & \vdots &  & \vdots \\x_n^0 & x_n^1 & ... & x_n^n\end{pmatrix},\quad a=\begin{pmatrix}a_0 \\ a_1 \\ \vdots \\ a_n\end{pmatrix},\quad f=\begin{pmatrix}f_0 \\ f_1 \\ \vdots \\ f_n\end{pmatrix}$$
 
   La matrice $V$ è una matrice di $Vandermonde$ (trasposta), che è univocamente
   definita dalle ascisse $\{x_i\}$. Una delle proprietà di essa è
@@ -75,17 +54,9 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   i dati del problema dipendono da un parametro scalare di perturbazione
   $\varepsilon \approx 0$
 
-  $$
-  A(\varepsilon) = A + \varepsilon F, F \in \R^{n \times n}
-   \Longrightarrow
-   \Delta A = \varepsilon F,
-  $$
+  $$A(\varepsilon) = A + \varepsilon F, F \in \R^{n \times n} \Longrightarrow \Delta A = \varepsilon F,$$
 
-  $$
-  b(\varepsilon) = b + \varepsilon f, f \in \R
-   \Longrightarrow
-   \Delta b = \varepsilon f,
-  $$
+  $$b(\varepsilon) = b + \varepsilon f, f \in \R \Longrightarrow \Delta b = \varepsilon f,$$
 
   Conseguentemente la sistema lineare perturbato sarà
 
@@ -99,11 +70,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Sviluppando nell'origine, si ottiene pertanto che, per $\varepsilon$
   sufficientemente piccolo
 
-  $$
-  x(\varepsilon)
-   = x + \varepsilon \dot{x}(0) + O(\varepsilon^2)
-   \approx x + \varepsilon \dot{x}(0)
-  $$
+  $$x(\varepsilon) = x + \varepsilon \dot{x}(0) + O(\varepsilon^2) \approx x + \varepsilon \dot{x}(0)$$
 
   ovvero,
 
@@ -112,10 +79,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Dalla sistema lineare perturbato segue, inoltre (derivata del prodotto)
   $(Ax)' = b' \rightarrow A'x + Ax' = b'$
 
-  $$
-  \dot{A}(\varepsilon)x(\varepsilon) + A(\varepsilon)\dot{x}(\varepsilon)
-   = \dot{b}(\varepsilon)
-  $$
+  $$\dot{A}(\varepsilon)x(\varepsilon) + A(\varepsilon)\dot{x}(\varepsilon) = \dot{b}(\varepsilon)$$
 
   e, quindi
 
@@ -128,40 +92,22 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   Sostituendo in sviluppo nell'origine con formula precedente si ottiene infine che:
 
-  $$
-  \frac{\|\Delta x\|}{\|x\|}
-    \approx \frac{\|A^{-1}(\varepsilon f - \varepsilon Fx)\|}{\|x\|}
-    \equiv \frac{\|A^{-1}(\Delta b - \Delta Ax)\|}{\|x\|}
-    \leq \frac{\|A^{-1}\|(\|\Delta b\| + \|\Delta A\| \|x\|)}{\|x\|}
-    =
-  $$
+  $$\frac{\Vert \Delta x\Vert }{\Vert x\Vert } \approx \frac{\Vert A^{-1}(\varepsilon f - \varepsilon Fx)\Vert }{\Vert x\Vert } \equiv \frac{\Vert A^{-1}(\Delta b - \Delta Ax)\Vert }{\Vert x\Vert } \leq \frac{\Vert A^{-1}\Vert (\Vert \Delta b\Vert  + \Vert \Delta A\Vert  \Vert x\Vert )}{\Vert x\Vert } =$$
 
-  $$
-    = \|A^{-1}\|\left(\frac{\|\Delta b\|}{\|x\|} + \|\Delta A\|\right)
-    = \|A\|\|A^{-1}\| \left(
-      \frac{\|\Delta b\|}{\|A\| \cdot \|x\|}
-      + \frac{\|\Delta A\|}{\|A\|}
-    \right)
-    \leq
-  $$
+  $$= \Vert A^{-1}\Vert \left(\frac{\Vert \Delta b\Vert }{\Vert x\Vert } + \Vert \Delta A\Vert \right) = \Vert A\Vert \Vert A^{-1}\Vert  \left( \frac{\Vert \Delta b\Vert }{\Vert A\Vert  \cdot \Vert x\Vert } + \frac{\Vert \Delta A\Vert }{\Vert A\Vert } \right) \leq$$
 
-  $$
-    \leq \|A\|\|A^{-1}\| \left(
-      \frac{\|\Delta b\|}{\|b\|}
-      + \frac{\|\Delta A\|}{\|A\|}
-    \right)
-  $$
+  $$\leq \Vert A\Vert \Vert A^{-1}\Vert  \left( \frac{\Vert \Delta b\Vert }{\Vert b\Vert } + \frac{\Vert \Delta A\Vert }{\Vert A\Vert } \right)$$
 
   Considerato che:
 
-  - $\frac{\|\Delta x\|}{\|x\|}$ può essere, in senso lato, assimilato ad una
+  - $\frac{\Vert \Delta x\Vert }{\Vert x\Vert }$ può essere, in senso lato, assimilato ad una
     sorta di “errore relativo” sul risultato e, similmente.
-  - $\frac{\|\Delta A\|}{\|A\|}$ e $\frac{\|\Delta b\|}{\|b\|}$ possono essere
+  - $\frac{\Vert \Delta A\Vert }{\Vert A\Vert }$ e $\frac{\Vert \Delta b\Vert }{\Vert b\Vert }$ possono essere
     assimilati a corrispondenti “errori relativi’ sui dati di ingresso.
 
   si ottiene che la quantità
 
-  $$\kappa(A) \equiv \|A\| \cdot \|A^{-1}\|$$
+  $$\kappa(A) \equiv \Vert A\Vert  \cdot \Vert A^{-1}\Vert $$
 
   definisce il numero di condizionamento del problema.
 
@@ -180,29 +126,17 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   partire dai dati esatti $f_i$ e quelli perturbati $\tilde{f_i}$.
   Si ottiene pertanto:
 
-  $$
-  \begin{align*}
-  \vert p(x) - \tilde{p}(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
-  & \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\
-  & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\
-  & = \{{\lambda\ =\ \sum\ Lagrange}\} \\
-  & = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\
-  \end{align*}
-  $$
+  $$\begin{align*} \vert p(x) - \tilde{p}(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\& \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\& \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\& = \{{\lambda\ =\ \sum\ Lagrange}\} \\& = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\ \end{align*}$$
 
   in qui $\lambda_n(x)$ è detta funzione di Lebesgue.
 
   Pertanto definiamo la norma ($\infty$) in $C^{(0)}$
 
-  $$\|f\| = \underset{a \leq x \leq b}{max}|f(x)|$$
+  $$\Vert f\Vert  = \underset{a \leq x \leq b}{max}\vert f(x)\vert $$
 
   allora
 
-  $$
-  \Vert p - \tilde{p}\Vert
-    \leq \Vert \lambda_n\Vert  * \Vert f - \tilde{f}\Vert
-    \equiv \Lambda_n * \Vert f - \tilde{f}\Vert
-  $$
+  $$\Vert p - \tilde{p}\Vert \leq \Vert \lambda_n\Vert  * \Vert f - \tilde{f}\Vert \equiv \Lambda_n * \Vert f - \tilde{f}\Vert$$
 
   La costante di Lebesgue $\Lambda_n$, che misura la massima amplificazione
   sul risultato dell'errore sui dati di ingresso, definisce, pertanto,
@@ -226,12 +160,12 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   esattamente, se:
 
   1. $s_m(x) \in C^{m-1}$ sull'intervallo $[a,b]$, e inoltre,
-  2. $s_m\vert_{[x_{i-1}, x_i]}(x) \in \prod_m,\ \ \ \ i = 1, ..., n$
+  2. $s_m\vert_{[x_{i-1}, x_i]}(x) \in \prod_m,\quad i = 1, ..., n$
 
   Allora diremo che $s_m(x)$ è una **_spline di grado m_** sulla partizione
   $\Delta$. Se, inoltre
 
-  $$s_m(x_i) = f_i,\ \ \ \ \ i = 0, 1, ..., n$$
+  $$s_m(x_i) = f_i,\quad i = 0, 1, ..., n$$
 
   Allora diremo che la **_spline_** interpola la funzione $f(x)$ nei nodi di
   tale partizione.
@@ -253,32 +187,22 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   ### Proprieta delle spline cubiche
 
   1. Spline **naturale**
-     $$s_3''(a) = 0,\ \ \ \ s_3''(b) = 0$$
+     $$s_3''(a) = 0,\quad s_3''(b) = 0$$
 
   2. Spline **completa**
-     $$s_3'(a) = f'(a),\ \ \ \ s_3'(b) = f'(b)$$
+     $$s_3'(a) = f'(a),\quad s_3'(b) = f'(b)$$
 
   3. Spline **periodica**
-     $$s_3'(a) = s_3'(b),\ \ \ \ s_3''(a) = s_3''(b)$$
+     $$s_3'(a) = s_3'(b),\quad s_3''(a) = s_3''(b)$$
 
   - Condizioni **not-a-knot**
     In questo caso, per evitare altre 3 condizioni precedenti, basta che vale
     una di questi due (sono equivalenti, osservando che, in virtù del teorema
     4.10, $s_3'''\vert_{x_{t-1},x_t}(x) \in \prod_0$):
 
-    $$
-      s_3'''\vert_{[x_0,x_1]}(x_1) = \
-      s_3'''\vert_{[x_1,x_2]}(x_1),\ \ \ \ \
-      s_3'''\vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = \
-      s_3'''\vert_{[x_{n-1},x_{n}]}(x_{n-1})
-    $$
+    $$s_3'''\vert_{[x_0,x_1]}(x_1) = s_3'''\vert_{[x_1,x_2]}(x_1),\quad s_3'''\vert_{[x_{n-2},x_{n-1}]}(x_{n-1}) = s_3'''\vert_{[x_{n-1},x_{n}]}(x_{n-1})$$
 
-    $$
-      \frac{s_3''(x_1) - s_3''(x_0)}{x_1 - x_0} = \
-      \frac{s_3''(x_2) - s_3''(x_1)}{x_2 - x_1},\ \ \ \ \
-      \frac{s_3''(x_{n-1}) - s_3''(x_{n-2})}{x_{n-1} - x_{n-2}} = \
-      \frac{s_3''(x_n) - s_3''(x_{n-1})}{x_n - x_{n-1}}
-    $$
+    $$\frac{s_3''(x_1) - s_3''(x_0)}{x_1 - x_0} = \frac{s_3''(x_2) - s_3''(x_1)}{x_2 - x_1},\quad \frac{s_3''(x_{n-1}) - s_3''(x_{n-2})}{x_{n-1} - x_{n-2}} = \frac{s_3''(x_n) - s_3''(x_{n-1})}{x_n - x_{n-1}}$$
 
   </details>
 
@@ -341,22 +265,18 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Si considera l'approssimazione di $f(x)$ fornita dal polinomio interpolante
   su $n+1$ ascisse equidistanti.
 
-  $$p(x_i) = f(x_i),\ \ \ \ i = 0, 1, ..., n$$
-  $$x_i = a + i * h,\ \ \ \ h = \frac{b - a}{n}$$
+  $$p(x_i) = f(x_i),\quad i = 0, 1, ..., n$$
+  $$x_i = a + i * h,\quad h = \frac{b - a}{n}$$
 
   Considerando la forma di Lagrange di polinomio, si ha:
 
-  $$
-  I(f) \approx \int_a^b \sum_{k=0}^{n}(f_k L_{kn}(x))dx\
-  =\sum_{k=0}^n(f_k \int_a^b L_{kn}(x)dx\\
-  = h \sum_{k=0}^n(f_k \int_a^b \prod_{j=0,j!=k}^{n}\frac{t - j}{k - j}dt)\\
-  $$
+  $$I(f) \approx \int_a^b \sum_{k=0}^{n}(f_k L_{kn}(x))dx =\sum_{k=0}^n(f_k \int_a^b L_{kn}(x)dx\ = h \sum_{k=0}^n(f_k \int_a^b \prod_{j=0,j \neq k}^{n}\frac{t - j}{k - j}dt)$$
 
   Nel ultimo passaggio utilizzata la trasformazione $x_t = a + th$.
   Pertanto la formula è
   $$I_n(f) \equiv \frac{b - a}{n} \sum_{k=0}^n(c_{kn} * f_k)$$
   in cui
-  $$c_{kn} = \int_a^b\prod_{j=0,j!=k}^{n}\frac{t - j}{k - j}dt,\ \ \ \ k = 0, 1, ..., n$$
+  $$c_{kn} = \int_a^b\prod_{j=0,j \neq k}^{n}\frac{t - j}{k - j}dt,\quad k = 0, 1, ..., n$$
   definisce l'approssimazione di $I(f)$ cercata. Essa difinisce la generica
   _**formula di quadratura** di Newton-Cotes_.
 
@@ -372,22 +292,22 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   $$T_0(x) \equiv 1$$
   $$T_1(x) = x$$
-  $$T_{k+1}(x) = 2xT_k(x) - T_{k - 1}(x),\ \ \ \ k = 1, 2, ...$$
+  $$T_{k+1}(x) = 2xT_k(x) - T_{k - 1}(x),\quad k = 1, 2, ...$$
 
   1. $T_k(x)$ è un polinomio di grado esatto $k$,
-  2. Il coefficiente principale di $T_k(x)$ è $2^{k - 1},\ \ \ \ k = 1, 2, ...$
+  2. Il coefficiente principale di $T_k(x)$ è $2^{k - 1},\quad k = 1, 2, ...$
   3. La famiglia di polinomi { $\hat{T}_k$ }, in cui
-     $$\hat{T}_0(x) = T_0(x),\ \ \ \ \hat{T}_k(x) = 2^{1 - k}T_k(x),\ \ \ \ k = 1, 2, ...$$
-  4. Ponendo $x = \cos \theta,\ \ \ \ \theta \in [0,\pi].$ per parametrizzare
+     $$\hat{T}_0(x) = T_0(x),\quad \hat{T}_k(x) = 2^{1 - k}T_k(x),\quad k = 1, 2, ...$$
+  4. Ponendo $x = \cos \theta,\quad \theta \in [0,\pi].$ per parametrizzare
      i punti dell'intervallo [-1,1] rispetto a $\theta$, e considerando che
      $\cos(k\theta+\theta) + \cos(k\theta-\theta) = 2\cos(k\theta)\cos(\theta)$,
      si ottiente:
-     $$T_k(x) \equiv T_k(\cos(\theta)) = \cos(k\theta),\ \ \ \ k = 0, 1, ...$$
+     $$T_k(x) \equiv T_k(\cos(\theta)) = \cos(k\theta),\quad k = 0, 1, ...$$
 
   ### Gli zeri
 
   Gli zeri di $T_k(x)$, tra loro tutti distinti, sono dati da:
-  $$x_{i}^{(k)} = \cos\left(\frac{(2i + 1)\pi}{2k}\right), \ \ \ \ i = 0, 1, ..., k - 1$$
+  $$x_{i}^{(k)} = \cos\left(\frac{(2i + 1)\pi}{2k}\right), \quad i = 0, 1, ..., k - 1$$
 
   Inoltre, la costante di Legesgue è $\Lambda_n \approx \frac{2}{\pi}\log n$
 
@@ -400,9 +320,9 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Data una matrice $A = (a\_{ij}) \in \R^{x \times n}$, si dice che essa è:
 
   - diagonale dominate per righe se
-    $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ij}\vert ,\ \ \ \ i = 1, ..., n$$
+    $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ij}\vert ,\quad i = 1, ..., n$$
   - diagonale dominate per colonne se
-    $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ji}\vert ,\ \ \ \ i = 1, ..., n$$
+    $$\vert a_{ii}\vert  > \sum_{j \neq i}\vert a_{ji}\vert ,\quad i = 1, ..., n$$
 
   ### Lemma 3.4
 
@@ -439,12 +359,12 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   $$A\hat{x} \equiv (I - pS)\hat{x} = \frac{1-p}{n}e \equiv b$$
   Dalla dimensione di $A$ è impensabile applicare la fattorizzazione diretta.
   La matrice $A$ ha una importate caratteristica, essere scritta in forma:
-  $$A = I - B,\ \ \ \ B \geq 0,\ \ \ \ \rho(B) < 1$$
+  $$A = I - B,\quad B \geq 0,\quad \rho(B) < 1$$
   Infatti, nel nostro caso, $S \geq 0$, $\rho(S) = 1$ e $p < 1$.
 
   ### Splitting regolari di matrici
 
-  $$M^{-1} \geq 0,\ \ \ \ N \geq 0$$
+  $$M^{-1} \geq 0,\quad N \geq 0$$
 
   ### Lemma 6.1
 
@@ -475,7 +395,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   $$ \hat{x} = (H + v \Delta^T)\hat{x} \equiv S\hat{x},$$
   dove
-  $$v = \frac{1}{n}e,\ \ \ \ e = (1, ..., 1)^T \in \R^n.$$
+  $$v = \frac{1}{n}e,\quad e = (1, ..., 1)^T \in \R^n.$$
 
   ### Teorema 6.1
 
@@ -507,23 +427,16 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   numeri complessi (quindi anche reali e a maggior ragione anche interi).
 
   Il problema è quello di stuidare il condizionamento di
-  $$y = x_1 + x_2,\ \ \ \ x_1, x_2 \in \R,\ \ \ \ x_1 + x_2 \neq 0$$
+  $$y = x_1 + x_2,\quad x_1, x_2 \in \R,\quad x_1 + x_2 \neq 0$$
   Denotando con $\varepsilon_1$ e $\varepsilon_2$ gli errori relativi sui dati
   iniziali, ed assumendo che nessun nuovo errore venga introdotto nel calcoli,
   si ottiene:
 
-  $$
-  y(1 + \varepsilon_y) = x_1(1 + \varepsilon_1) + x_2(1 + \varepsilon_2)\
-  = x_1 + x_2 + x_1\varepsilon_1 + x_2\varepsilon_2
-  $$
+  $$y(1 + \varepsilon_y) = x_1(1 + \varepsilon_1) + x_2(1 + \varepsilon_2) = x_1 + x_2 + x_1\varepsilon_1 + x_2\varepsilon_2$$
 
   Si ricava:
 
-  $$
-  \vert \varepsilon_y\vert  \leq \frac{\vert x_1\vert  + \vert x_2\vert }{\vert x_1 + x_2\vert }\varepsilon_x\
-  \equiv \kappa \varepsilon_x,\ \ \ \ \varepsilon_x\
-  = max\{\vert \varepsilon_1\vert , \vert \varepsilon_2\vert \}
-  $$
+  $$\vert \varepsilon_y\vert  \leq \frac{\vert x_1\vert  + \vert x_2\vert }{\vert x_1 + x_2\vert }\varepsilon_x \equiv \kappa \varepsilon_x,\quad \varepsilon_x = max\{\vert \varepsilon_1\vert , \vert \varepsilon_2\vert \}$$
 
   </details>
 
@@ -592,26 +505,17 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Il più piccolo ed il più grand (in valore assoluto), tra i numeri di
   macchina diversi da 0, sono rispettivamente dati da:
 
-  $$
-  \begin{align*}
-    &r_1 = b^{-v},\\ &r_2 = (1 - b^{-m})b^{\varphi},\ \ \ \ \varphi = b^s - v
-  \end{align*}
-  $$
+  $$\begin{align*}&r_1 = b^{-v},\\ &r_2 = (1 - b^{-m})b^{\varphi},\quad \varphi = b^s - v\end{align*}$$
 
   Numeri di machina sono $L = [-r_2, -r_1]\cup\{0\}\cup[r_1, r_2]$
 
   ### Teorema 1.4
 
   Se $x \in L$, $x \neq 0$, allora
-  $$fl(x) = x(1 + \varepsilon_x),\ \ \ \ \vert \varepsilon_x\vert  \leq u$$
+  $$fl(x) = x(1 + \varepsilon_x),\quad \vert \varepsilon_x\vert  \leq u$$
   dove
 
-  $$
-  u = \begin{cases}
-      b^{1-m},\ in\ caso\ di\ troncamento,\\
-      \frac{1}{2} b^{1-m},\ in\ caso\ di\ arrotondamento
-  \end{cases}
-  $$
+  $$u = \begin{cases} b^{1-m},\ in\ caso\ di\ troncamento,\\ \frac{1}{2} b^{1-m},\ in\ caso\ di\ arrotondamento \end{cases}$$
 
   ##### Dimostrazione
 
@@ -621,10 +525,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
 - <details><summary>Condizionamento (di un problema) cap 1 (<b>X2</b>)</summary>
 
-  $$
-  \vert \varepsilon_y\vert  \approx \left\vert  f'(x)\frac{x}{y}\right\vert  \vert \varepsilon_x\vert \
-  \equiv \kappa \vert \varepsilon_x\vert
-  $$
+  $$\vert \varepsilon_y\vert  \approx \left\vert  f'(x)\frac{x}{y}\right\vert  \vert \varepsilon_x\vert \ \equiv \kappa \vert \varepsilon_x\vert$$
 
   Il fattore di amplificazione $\kappa$, che misura di quanto gli errori
   iniziali possono amplificarsi sul risultato finale, è denominato
@@ -648,7 +549,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
 - <details><summary>Fattorizzazione QR (<b>X2</b>)</summary>
 
-  $$Ax = b,\ \ \ \ A \in \R^{m \times n},\ \ \ \ m > n \equiv rank(A)$$
+  $$Ax = b,\quad A \in \R^{m \times n},\quad m > n \equiv rank(A)$$
 
   ### Teorema 3.8
 
@@ -682,7 +583,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   Le $M$-matrici sono particolari matrici $monotone$, in quanto, se $A$ è una
   $M$-matrice allora
-  $$Ax \leq C\ \ \ \ \Rightarrow\ \ \ \ I \leq A^{-1}C.\ I \leq CA^{-1}$$
+  $$Ax \leq C\quad \Rightarrow\quad I \leq A^{-1}C.\ I \leq CA^{-1}$$
   dove, al solito, le diseguaglianze si intendono elemento per elemento.
 
   <a href="#google-pagerank">Google pagerank</a>
@@ -746,44 +647,15 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   di Gauss ([1](https://www.youmath.it/lezioni/algebra-lineare/matrici-e-vettori/831-eliminazione-di-gauss.html),
   [2](https://it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss)), con
 
-  $$
-  g_i \equiv \frac{1}{a_{ii}^{(i)}}\
-  (0, ..., 0, a_{i+1,i}^{(i)}, ..., a_{ni}^{(i)})^T
-  $$
+  $$g_i \equiv \frac{1}{a_{ii}^{(i)}}\ (0, ..., 0, a_{i+1,i}^{(i)}, ..., a_{ni}^{(i)})^T$$
 
-  $$
-  L = \begin{pmatrix}
-    1      & 0      & \cdots    & 0      \\
-    g_{21} & 1      & \ddots    & \vdots \\
-    \vdots & \ddots & \ddots    & 0      \\
-    g_{n1} & \cdots & g_{n,n-1} & 1
-  \end{pmatrix},\ \ \ \ \
-  U = \begin{pmatrix}
-    a_{11}^{(1)} & \cdots &                     & a_{1n}^{(1)}       \\
-    0            & \ddots &                     & \vdots             \\
-    \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & a_{n-1, n}^{(n-1)} \\
-    0            & \cdots & 0                   & a_{nn}^{(n)}
-  \end{pmatrix}
-  $$
+  $$L = \begin{pmatrix} 1      & 0      & \cdots    & 0      \\ g_{21} & 1      & \ddots    & \vdots \\ \vdots & \ddots & \ddots    & 0      \\ g_{n1} & \cdots & g_{n,n-1} & 1 \end{pmatrix},\quad \ U = \begin{pmatrix} a_{11}^{(1)} & \cdots &                     & a_{1n}^{(1)}       \\ 0            & \ddots &                     & \vdots             \\ \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & a_{n-1, n}^{(n-1)} \\ 0            & \cdots & 0                   & a_{nn}^{(n)} \end{pmatrix}$$
 
   ### LDL<sup>T</sup>
 
   Per ottenere $D$ basta prendere elementi diagonali di $U$ in $LU$
 
-  $$
-  L = \begin{pmatrix}
-    1      & 0      & \cdots    & 0      \\
-    g_{21} & 1      & \ddots    & \vdots \\
-    \vdots & \ddots & \ddots    & 0      \\
-    g_{n1} & \cdots & g_{n,n-1} & 1
-  \end{pmatrix},\ \ \ \ \
-  D = \begin{pmatrix}
-    a_{11}^{(1)} & 0      & \cdots              & 0            \\
-    0            & \ddots & \ddots              & \vdots       \\
-    \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & 0            \\
-    0            & \cdots & 0                   & a_{nn}^{(n)}
-  \end{pmatrix}
-  $$
+  $$L = \begin{pmatrix} 1      & 0      & \cdots    & 0      \\ g_{21} & 1      & \ddots    & \vdots \\ \vdots & \ddots & \ddots    & 0      \\ g_{n1} & \cdots & g_{n,n-1} & 1 \end{pmatrix},\quad \ D = \begin{pmatrix} a_{11}^{(1)} & 0      & \cdots              & 0            \\ 0            & \ddots & \ddots              & \vdots       \\ \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & 0            \\ 0            & \cdots & 0                   & a_{nn}^{(n)} \end{pmatrix}$$
 
   [Come funziona](https://yewtu.be/watch?v=8JdJoc3HMA8).
 
