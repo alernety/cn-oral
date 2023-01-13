@@ -26,7 +26,28 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   la definizione. Cosi facendo, si perviene al seguente sistema di equazioni
   lineari $Va = f$ in cui:
 
-  $$\begin{pmatrix}x_0^0 & x_0^1 & ... & x_0^n \\x_1^0 & x_1^1 & ... & x_1^n \\ \vdots & \vdots &  & \vdots \\x_n^0 & x_n^1 & ... & x_n^n\end{pmatrix},\quad a=\begin{pmatrix}a_0 \\ a_1 \\ \vdots \\ a_n\end{pmatrix},\quad f=\begin{pmatrix}f_0 \\ f_1 \\ \vdots \\ f_n\end{pmatrix}$$
+  <img
+    style="display:block;margin:auto;"
+    src="https://latex.codecogs.com/svg.image?\dpi{110}
+      \begin{pmatrix}
+        x_0^0 & x_0^1 & ... & x_0^n \\
+        x_1^0 & x_1^1 & ... & x_1^n \\
+        \vdots & \vdots &  & \vdots \\
+        x_n^0 & x_n^1 & ... & x_n^n
+      \end{pmatrix},\quad a=\begin{pmatrix}
+        a_0 \\
+        a_1 \\
+        \vdots \\
+      a_n\end{pmatrix},\quad f=\begin{pmatrix}
+        f_0 \\
+        f_1 \\
+        \vdots \\
+        f_n
+      \end{pmatrix}
+    "
+  />
+
+  <!-- $$\begin{pmatrix}x_0^0 & x_0^1 & ... & x_0^n \\x_1^0 & x_1^1 & ... & x_1^n \\ \vdots & \vdots &  & \vdots \\x_n^0 & x_n^1 & ... & x_n^n\end{pmatrix},\quad a=\begin{pmatrix}a_0 \\ a_1 \\ \vdots \\ a_n\end{pmatrix},\quad f=\begin{pmatrix}f_0 \\ f_1 \\ \vdots \\ f_n\end{pmatrix}$$ -->
 
   La matrice $V$ è una matrice di $Vandermonde$ (trasposta), che è univocamente
   definita dalle ascisse $\{x_i\}$. Una delle proprietà di essa è
@@ -36,7 +57,7 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   ovvero esiste ed è unico il polinomio soddisfacente la definizione di
   **_polinomio interpolante_**
 
-  </details>
+    </details>
 
 - <details><summary>Condizionamento nell'interpolazione (<b>X5</b>)</summary>
 
@@ -126,7 +147,20 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   partire dai dati esatti $f_i$ e quelli perturbati $\tilde{f_i}$.
   Si ottiene pertanto:
 
-  $$\begin{align*} \vert p(x) - \tilde{p}(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\& \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\& \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\& = \{{\lambda\ =\ \sum\ Lagrange}\} \\& = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\ \end{align*}$$
+  <img
+    style="display:block;margin:auto;"
+    src="https://latex.codecogs.com/svg.image?\dpi{110}
+      \begin{align*}
+        \vert p(x) - \tilde{p}(x)\vert
+          & = {forma\ completa} = {si\ racoglie\ Lagrange} \\
+          & \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\
+          & \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\
+          & = \{{\lambda\ =\ \sum\ Lagrange}\} \\
+          & = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\
+      \end{align*}
+    "
+  />
+  <!-- $$\begin{align*} \vert p(x) - \tilde{p}(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\& \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\& \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\& = \{{\lambda\ =\ \sum\ Lagrange}\} \\& = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\ \end{align*}$$ -->
 
   in qui $\lambda_n(x)$ è detta funzione di Lebesgue.
 
@@ -505,7 +539,16 @@ ha fatto quelle domande, quindi è più probabile che chieda.
   Il più piccolo ed il più grand (in valore assoluto), tra i numeri di
   macchina diversi da 0, sono rispettivamente dati da:
 
-  $$\begin{align*}&r_1 = b^{-v},\\ &r_2 = (1 - b^{-m})b^{\varphi},\quad \varphi = b^s - v\end{align*}$$
+  <img
+    style="display:block;margin:auto;"
+    src="https://latex.codecogs.com/svg.image?\dpi{110}
+      \begin{align*}
+        &r_1 = b^{-v},\\
+        &r_2 = (1 - b^{-m})b^{\varphi},\quad \varphi = b^s - v
+      \end{align*}
+    "
+  />
+  <!-- $$\begin{align*}&r_1 = b^{-v},\\ &r_2 = (1 - b^{-m})b^{\varphi},\quad \varphi = b^s - v\end{align*}$$ -->
 
   Numeri di machina sono $L = [-r_2, -r_1]\cup\{0\}\cup[r_1, r_2]$
 
@@ -649,13 +692,45 @@ ha fatto quelle domande, quindi è più probabile che chieda.
 
   $$g_i \equiv \frac{1}{a_{ii}^{(i)}}\ (0, ..., 0, a_{i+1,i}^{(i)}, ..., a_{ni}^{(i)})^T$$
 
-  $$L = \begin{pmatrix} 1      & 0      & \cdots    & 0      \\ g_{21} & 1      & \ddots    & \vdots \\ \vdots & \ddots & \ddots    & 0      \\ g_{n1} & \cdots & g_{n,n-1} & 1 \end{pmatrix},\quad \ U = \begin{pmatrix} a_{11}^{(1)} & \cdots &                     & a_{1n}^{(1)}       \\ 0            & \ddots &                     & \vdots             \\ \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & a_{n-1, n}^{(n-1)} \\ 0            & \cdots & 0                   & a_{nn}^{(n)} \end{pmatrix}$$
+  <img
+    style="display:block;margin:auto;"
+    src="https://latex.codecogs.com/svg.image?\dpi{110}
+      L = \begin{pmatrix}
+        1      & 0      & \cdots    & 0      \\
+        g_{21} & 1      & \ddots    & \vdots \\
+        \vdots & \ddots & \ddots    & 0      \\
+        g_{n1} & \cdots & g_{n,n-1} & 1
+      \end{pmatrix},\quad \ U = \begin{pmatrix}
+        a_{11}^{(1)} & \cdots &                     & a_{1n}^{(1)}       \\
+        0            & \ddots &                     & \vdots             \\
+        \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & a_{n-1, n}^{(n-1)} \\
+        0            & \cdots & 0                   & a_{nn}^{(n)}
+      \end{pmatrix}
+    "
+  />
+  <!-- $$L = \begin{pmatrix} 1      & 0      & \cdots    & 0      \\ g_{21} & 1      & \ddots    & \vdots \\ \vdots & \ddots & \ddots    & 0      \\ g_{n1} & \cdots & g_{n,n-1} & 1 \end{pmatrix},\quad \ U = \begin{pmatrix} a_{11}^{(1)} & \cdots &                     & a_{1n}^{(1)}       \\ 0            & \ddots &                     & \vdots             \\ \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & a_{n-1, n}^{(n-1)} \\ 0            & \cdots & 0                   & a_{nn}^{(n)} \end{pmatrix}$$ -->
 
   ### LDL<sup>T</sup>
 
   Per ottenere $D$ basta prendere elementi diagonali di $U$ in $LU$
 
-  $$L = \begin{pmatrix} 1      & 0      & \cdots    & 0      \\ g_{21} & 1      & \ddots    & \vdots \\ \vdots & \ddots & \ddots    & 0      \\ g_{n1} & \cdots & g_{n,n-1} & 1 \end{pmatrix},\quad \ D = \begin{pmatrix} a_{11}^{(1)} & 0      & \cdots              & 0            \\ 0            & \ddots & \ddots              & \vdots       \\ \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & 0            \\ 0            & \cdots & 0                   & a_{nn}^{(n)} \end{pmatrix}$$
+  <img
+    style="display:block;margin:auto;"
+    src="https://latex.codecogs.com/svg.image?\dpi{110}
+      L = \begin{pmatrix}
+        1      & 0      & \cdots    & 0      \\
+        g_{21} & 1      & \ddots    & \vdots \\
+        \vdots & \ddots & \ddots    & 0      \\
+        g_{n1} & \cdots & g_{n,n-1} & 1
+      \end{pmatrix},\quad \ D = \begin{pmatrix}
+        a_{11}^{(1)} & 0      & \cdots              & 0            \\
+        0            & \ddots & \ddots              & \vdots       \\
+        \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & 0            \\
+        0            & \cdots & 0                   & a_{nn}^{(n)}
+      \end{pmatrix}
+    "
+  />
+  <!-- $$L = \begin{pmatrix} 1      & 0      & \cdots    & 0      \\ g_{21} & 1      & \ddots    & \vdots \\ \vdots & \ddots & \ddots    & 0      \\ g_{n1} & \cdots & g_{n,n-1} & 1 \end{pmatrix},\quad \ D = \begin{pmatrix} a_{11}^{(1)} & 0      & \cdots              & 0            \\ 0            & \ddots & \ddots              & \vdots       \\ \vdots       & \ddots & a_{n-1,n-1}^{(n)-1} & 0            \\ 0            & \cdots & 0                   & a_{nn}^{(n)} \end{pmatrix}$$ -->
 
   [Come funziona](https://yewtu.be/watch?v=8JdJoc3HMA8).
 
