@@ -46,6 +46,24 @@ ha fatto quelle domande, quindi è più probabile che chieda.
       \end{pmatrix}
     "
   />
+  
+  ```math
+  \begin{pmatrix}
+    x_0^0 & x_0^1 & ... & x_0^n \\
+    x_1^0 & x_1^1 & ... & x_1^n \\
+    \vdots & \vdots &  & \vdots \\
+    x_n^0 & x_n^1 & ... & x_n^n
+  \end{pmatrix},\quad a=\begin{pmatrix}
+    a_0 \\
+    a_1 \\
+    \vdots \\
+  a_n\end{pmatrix},\quad f=\begin{pmatrix}
+    f_0 \\
+    f_1 \\
+    \vdots \\
+    f_n
+  \end{pmatrix}
+  ```
 
   <!-- $$\begin{pmatrix}x_0^0 & x_0^1 & ... & x_0^n \\x_1^0 & x_1^1 & ... & x_1^n \\ \vdots & \vdots &  & \vdots \\x_n^0 & x_n^1 & ... & x_n^n\end{pmatrix},\quad a=\begin{pmatrix}a_0 \\ a_1 \\ \vdots \\ a_n\end{pmatrix},\quad f=\begin{pmatrix}f_0 \\ f_1 \\ \vdots \\ f_n\end{pmatrix}$$ -->
 
