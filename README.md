@@ -3,7 +3,7 @@
 I numeri successivi alla **X[0-9]** sono le volte in cui in diversi orali
 ha fatto quelle domande, quindi è più probabile che chieda.
 
-<details><summary>Polinomio interpolante (<b>X8</b>)</summary>
+## Polinomio interpolante (**X8**)
 
 Ascisse tra di loro distinte:
 $$a \leq x_0 < x_1 < ... < x_n \leq b$$
@@ -52,9 +52,7 @@ nonsingolare. Pertanto, esiste ed è unica la soluzione dei sistema lineare,
 ovvero esiste ed è unico il polinomio soddisfacente la definizione di
 **_polinomio interpolante_**
 
-</details>
-
-<details><summary>Condizionamento nell'interpolazione (<b>X5</b>)</summary>
+## Condizionamento nell'interpolazione (**X5**)
 
 ### Condizionamento del problema della valutazione del polinomio interpolante
 
@@ -127,9 +125,7 @@ $$\kappa(A) \equiv \Vert A\Vert  \cdot \Vert A^{-1}\Vert $$
 
 definisce il numero di condizionamento del problema.
 
-</details>
-
-<details><summary>Condizionamento del problema in approssimazione (<b>X5</b>)</summary>
+## Condizionamento del problema in approssimazione (**X5**)
 
 Consideriamo che le ascisse come parametri fissati, riguardando le $f_i$ come
 gli unici dati di ingresso. In questo caso l'analisi di **_condizionamento_**
@@ -153,8 +149,6 @@ $$
 \end{align*}
 $$
 
-  <!-- $$\begin{align*} \vert p(x) - \tilde{p}(x)\vert  & = {forma\ completa} = {si\ racoglie\ Lagrange} \\& \leq {\vert Lagrange\vert \ e\ \vert (f_k - \tilde{f_k})\vert } \\& \leq {si\ prende\ come\ costante\ il\ max_k(f_k - \tilde{f_k})} \\& = \{{\lambda\ =\ \sum\ Lagrange}\} \\& = {\lambda_n(x) * max_k(f_k - \tilde{f_k})}\\ \end{align*}$$ -->
-
 in qui $\lambda_n(x)$ è detta funzione di Lebesgue.
 
 Pertanto definiamo la norma ($\infty$) in $C^{(0)}$
@@ -170,10 +164,9 @@ sul risultato dell'errore sui dati di ingresso, definisce, pertanto,
 il **_numero di condizionamento_** del problema,
 
 - $\Lambda_n \geq O(\log n) \rightarrow \infty$, per $n \rightarrow \infty$. Pertanto problema diventa
-progressivamente malcondizionato, al crescere di `n`.
-</details>
+  progressivamente malcondizionato, al crescere di `n`.
 
-<details><summary>Spline (def, teorema dimensionalità, proprietà delle cubiche) (<b>X4</b>)</summary>
+## Spline (def, teorema dimensionalità, proprietà delle cubiche) (**X4**)
 
 $C^{(k)}$ denota l'insieme delle funzioni $f: \R \rightarrow \R$ derivabili
 $k$ volte, con derivata $k$-esima continua. Ove necessario, il dominio di $f$
@@ -231,9 +224,7 @@ funzione sulla partizione $\Delta$ assegnata.
 
   $$\frac{s_3''(x_1) - s_3''(x_0)}{x_1 - x_0} = \frac{s_3''(x_2) - s_3''(x_1)}{x_2 - x_1},\quad \frac{s_3''(x_{n-1}) - s_3''(x_{n-2})}{x_{n-1} - x_{n-2}} = \frac{s_3''(x_n) - s_3''(x_{n-1})}{x_n - x_{n-1}}$$
 
-</details>
-
-<details><summary>Risoluzione sistemi lineari (<b>X4</b>)</summary>
+## Risoluzione sistemi lineari (**X4**)
 
 ### Sistemi lineari
 
@@ -285,9 +276,7 @@ Acluni metodi di fattorizzazione:
 - $QR$
 - $LDL^T$ per simmettriche definite positive
 
-  </details>
-
-<details><summary>Newton-Cotes (<b>X4</b>)</summary>
+## Newton-Cotes (**X4**)
 
 Si considera l'approssimazione di $f(x)$ fornita dal polinomio interpolante
 su $n+1$ ascisse equidistanti.
@@ -311,9 +300,8 @@ Si distinguano casi:
 
 - $n = 1$ allora è la _formula dei trapezi_
 - $n = 2$ allora è la _formula di Simpson_
-</details>
 
-<details><summary>Chebyshev (<b>X4</b>)</summary>
+## Chebyshev (**X4**)
 
 ### Definizione
 
@@ -338,9 +326,7 @@ $$x_{i}^{(k)} = \cos\left(\frac{(2i + 1)\pi}{2k}\right), \quad i = 0, 1, ..., k 
 
 Inoltre, la costante di Legesgue è $\Lambda_n \approx \frac{2}{\pi}\log n$
 
-</details>
-
-<details><summary>Matrici diagonali dominanti + dim (<b>X4</b>)</summary>
+## Matrici diagonali dominanti + dim (**X4**)
 
 ### Definizione
 
@@ -379,9 +365,7 @@ solamente elementi in prindcipale diagonale rimangono uguali, ma da qui
 è ovvio che se matrice principale è diagonale dominante per righe (colonne),
 allora sua trasposta sarà diagonale dominate per colonne (righe).
 
-</details>
-
-<details><summary id="google-pagerank">Metodo iterativo Google pagerank (<b>X4</b>)</summary>
+## Metodo iterativo Google pagerank (**X4**)
 
 Prolbema può essere riformulata in seguente sistema lineare:
 $$A\hat{x} \equiv (I - pS)\hat{x} = \frac{1-p}{n}e \equiv b$$
@@ -417,9 +401,7 @@ in cui:
 - $L$ è strettamente triangolare inferiore;
 - $U$ è strettamente triangolare superiore.
 
-</details>
-
-<details><summary id="raggio-spettrale">Raggio spettrale (<b>X4</b>)</summary>
+## Raggio spettrale (**X4**)
 
 $$ \hat{x} = (H + v \Delta^T)\hat{x} \equiv S\hat{x},$$
   dove
@@ -442,9 +424,7 @@ quindi, di $S$. Osservando che $p(S) \leq \\vert S\\vert$ per ogni norma indotta
 matrice, la tesi si completa in virtù del punto $1$, da cui si ottiene:
 $1 = \\vert e^T S\\vert_{\infty} = \\vert S\\vert_1$.
 
-</details>
-
-<details><summary>Cancellazione numerica e somma algebrica (<b>X3</b>)</summary>
+## Cancellazione numerica e somma algebrica (**X3**)
 
 **_Cancellazione numerica_** è la conseguenza più grave della rappresentazione
 con precisione finita dei numeri reali all'interno di un calcolatore.
@@ -466,9 +446,7 @@ Si ricava:
 
 $$\vert \varepsilon_y\vert  \leq \frac{\vert x_1\vert  + \vert x_2\vert }{\vert x_1 + x_2\vert }\varepsilon_x \equiv \kappa \varepsilon_x,\quad \varepsilon_x = max\{\vert \varepsilon_1\vert , \vert \varepsilon_2\vert \}$$
 
-</details>
-
-<details><summary>Dimostrazione A=LDL<sup>T</sup> (<b>X2</b>)</summary>
+## Dimostrazione $A=LDL^T$ (**X2**)
 
 ### Matrice simmetrica definita positiva
 
@@ -487,7 +465,7 @@ Una matrice sdp è nonsingolare.
 
 Se $A$ è sdp, allora è fattorizzabile $LU$.
 
-#### <span id="sdp-LU-fattorizzabile">Dimostrazione</span>
+#### Dimostrazione sdp $LU$ fattorizzabile
 
 Dal Lemma 3.7, tutte le sottomatrici principali sono
 sdp e quindi, dal Lemma 3.8, segue che i corrispondenti minori
@@ -524,9 +502,7 @@ vettore $y \neq 0$ tale che $L^T y = x$. Segue pertanto che
 $$x^T D x = (L^T y)^T D (L^T y) = y^T LDL^T y = y^T A y > 0$$
 essendo $A$ sdp
 
-</details>
-
-<details><summary>Precisione di macchina (<b>X2</b>)</summary>
+## Precisione di macchina (**X2**)
 
 ### Teorema 1.3
 
@@ -554,9 +530,7 @@ $$u = \begin{cases} b^{1-m},\ in\ caso\ di\ troncamento,\\ \frac{1}{2} b^{1-m},\
 
 La **_precisione di macchina_** è definita da quantità $u$ in Teorema 1.4
 
-</details>
-
-<details><summary>Condizionamento (di un problema) cap 1 (<b>X2</b>)</summary>
+## Condizionamento (di un problema) cap 1 (**X2**)
 
 $$\vert \varepsilon_y\vert  \approx \left\vert  f'(x)\frac{x}{y}\right\vert  \vert \varepsilon_x\vert \ \equiv \kappa \vert \varepsilon_x\vert$$
 
@@ -578,9 +552,7 @@ Osservare che:
   <!-- 1. nel caso in cui si utilizzi una precisione di macchina $u$ e si abbia
      $\kappa \approx u^{-1}$, qualunque risultato sarà privo di significato -->
 
-</details>
-
-<details><summary>Fattorizzazione QR (<b>X2</b>)</summary>
+## Fattorizzazione $QR$ (**X2**)
 
 $$Ax = b,\quad A \in \R^{m \times n},\quad m > n \equiv rank(A)$$
 
@@ -594,66 +566,48 @@ Data la matrice $A$, esistono:
 tali che:
 $$A = QR \equiv Q\binom{\hat{R}}{O}$$
 
-</details>
+## I sistemi lineari in generale, cap 3 fino a dim unicità du $A=LU$ (**X2**)
 
-<details><summary>I sistemi lineari in generale, cap 3 fino a dim unicità du A=LU (<b>X2</b>)</summary>
-</details>
+## Metodo iterativo applicato ai sistemi lineari (**X2**)
 
-<details><summary>Metodo iterativo applicato ai sistemi lineari (<b>X2</b>)</summary>
+[Google pagerank](#metodo-iterativo-google-pagerank-x4)
 
-<a href="#google-pagerank">Google pagerank</a>
+[Raggio spettrale](#raggio-spettrale-x4)
 
-<a href="#raggio-spettrale">Raggio spettrale</a>
-
-</details>
-
-<details><summary>Matrice ortogonale (<b>X2</b>)</summary>
+## Matrice ortogonale (**X2**)
 
 **_Matrice ortogonale_** è una matrice invertibile tale che la sua trasposta coincide con la sua inversa.
 
-</details>
-
-<details><summary>M matrici e matrici monotone in generale (<b>X2</b>)</summary>
+## M matrici e matrici monotone in generale (**X2**)
 
 Le $M$-matrici sono particolari matrici $monotone$, in quanto, se $A$ è una
 $M$-matrice allora
 $$Ax \leq C\quad \Rightarrow\quad I \leq A^{-1}C.\ I \leq CA^{-1}$$
 dove, al solito, le diseguaglianze si intendono elemento per elemento.
 
-<a href="#google-pagerank">Google pagerank</a>
+[Google pagerank](#metodo-iterativo-google-pagerank-x4)
 
-<a href="#raggio-spettrale">Raggio spettrale</a>
+[Raggio spettrale](#raggio-spettrale-x4)
 
-</details>
+## Dimostrazione $sdp \Rightarrow LU$ (**X2**)
 
-<details><summary>Dimostrazione sdp &rArr; LU (<b>X2</b>)</summary>
+### [Dimostrazione Teorema 3.4](#dimostrazione-sdp-fattorizzabile)
 
-### <a href="#sdp-LU-fattorizzabile">Dimostrazione Teorema 3.4</a>
+## def splitting regolare di matrice (**X2**)
 
-</details>
+## metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)
 
-<details><summary>def splitting regolare di matrice (<b>X2</b>)</summary>
-</details>
+## condizionamento del problema nei sistemi lineari
 
-<details><summary>metodo di newton (dim convergenza, molteplicità, Aitken) (<b>X2</b>)</summa
-  ry></details>
-<details><summary>condizionamento del problema nei sistemi lineari</summary>
-</details>
+## calcolare la norma uno e la norma infinito di una matrice
 
-<details><summary>calcolare la norma uno e la norma infinito di una matrice</summary>
-</details>
+## matrici triangolari con codice
 
-<details><summary>matrici triangolari con codice</summary>
-</details>
+## condizionamento delle matrici
 
-<details><summary>condizionamento delle matrici</summary>
+## come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)
 
-</details>
-
-<details><summary>come si ottiene Va=f (risp: prodotto scalare tra gli elementi di V ed a)</summary>
-</details>
-
-<details><summary>Differenze tra LU e LDL<sup>T</sup></summary>
+## Differenze tra $LU$ e $LDL^T$
 
 ### LU
 
@@ -704,7 +658,7 @@ L = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-### LDL<sup>T</sup>
+### $LDL^T$
 
 Per ottenere $D$ basta prendere elementi diagonali di $U$ in $LU$
 
@@ -724,24 +678,16 @@ $$
 
 [Come funziona](https://yewtu.be/watch?v=8JdJoc3HMA8).
 
-</details>
+## metodi iterativi per sistemi lineari
 
-<details><summary>metodi iterativi per sistemi lineari</summary>
-</details>
+## condizionamento cap 2
 
-<details><summary>condizionamento cap 2</summary>
-</details>
-<details><summary>equazione retta tangente</summary>
-</details>
+## equazione retta tangente
 
-<details><summary>def norma indotta su matrice</summary>
-</details>
+## def norma indotta su matrice
 
-<details><summary>approssimazione polinomiale (inizio cap 4)</summary>
-</details>
+## approssimazione polinomiale (inizio cap 4)
 
-<details><summary>condizionamento del problema in generale</summary>
-</details>
+## condizionamento del problema in generale
 
-<details><summary>codice matrice ortogonale</summary>
-</details>
+## codice matrice ortogonale
