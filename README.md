@@ -52,7 +52,7 @@ nonsingolare. Pertanto, esiste ed è unica la soluzione dei sistema lineare,
 ovvero esiste ed è unico il polinomio soddisfacente la definizione di
 **_polinomio interpolante_**
 
-## Condizionamento nell'interpolazione (**X5**)
+## Condizionamento nelle sistemi lineari (**X5**)
 
 ### Condizionamento del problema della valutazione del polinomio interpolante
 
