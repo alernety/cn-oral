@@ -39,6 +39,8 @@ Domande fuori corso:
 4. [metodi iterativi per sistemi lineari](#metodi-iterativi-per-sistemi-lineari)
 5. [M matrici e matrici monotone in generale (**X2**)](#m-matrici-e-matrici-monotone-in-generale-x2)
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Polinomio interpolante (**X8**)
@@ -91,6 +93,8 @@ Dato che le ascisse sono tra loro distante, allora $V$ risulta essere
 nonsingolare. Pertanto, esiste ed è unica la soluzione dei sistema lineare,
 ovvero esiste ed è unico il polinomio soddisfacente la definizione di
 **_polinomio interpolante_**
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -169,6 +173,8 @@ $$\kappa(A) \equiv \Vert A\Vert  \cdot \Vert A^{-1}\Vert $$
 
 definisce il numero di condizionamento del problema.
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Condizionamento del problema in approssimazione (**X5**)
@@ -211,6 +217,8 @@ il **_numero di condizionamento_** del problema,
 
 - $\Lambda_n \geq O(\log n) \rightarrow \infty$, per $n \rightarrow \infty$. Pertanto problema diventa
   progressivamente malcondizionato, al crescere di `n`.
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -272,6 +280,8 @@ funzione sulla partizione $\Delta$ assegnata.
 
   $$\frac{s_3''(x_1) - s_3''(x_0)}{x_1 - x_0} = \frac{s_3''(x_2) - s_3''(x_1)}{x_2 - x_1},\quad \frac{s_3''(x_{n-1}) - s_3''(x_{n-2})}{x_{n-1} - x_{n-2}} = \frac{s_3''(x_n) - s_3''(x_{n-1})}{x_n - x_{n-1}}$$
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Risoluzione sistemi lineari (**X4**)
@@ -328,6 +338,8 @@ Acluni metodi di fattorizzazione:
 - $QR$
 - $LDL^T$ per simmettriche definite positive
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Newton-Cotes (**X4**)
@@ -355,6 +367,8 @@ Si distinguano casi:
 - $n = 1$ allora è la _formula dei trapezi_
 - $n = 2$ allora è la _formula di Simpson_
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Chebyshev (**X4**)
@@ -381,6 +395,8 @@ Gli zeri di $T_k(x)$, tra loro tutti distinti, sono dati da:
 $$x_{i}^{(k)} = \cos\left(\frac{(2i + 1)\pi}{2k}\right), \quad i = 0, 1, ..., k - 1$$
 
 Inoltre, la costante di Legesgue è $\Lambda_n \approx \frac{2}{\pi}\log n$
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -423,6 +439,8 @@ solamente elementi in prindcipale diagonale rimangono uguali, ma da qui
 è ovvio che se matrice principale è diagonale dominante per righe (colonne),
 allora sua trasposta sarà diagonale dominate per colonne (righe).
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Metodo iterativo Google pagerank (**X4**)
@@ -461,6 +479,8 @@ in cui:
 - $L$ è strettamente triangolare inferiore;
 - $U$ è strettamente triangolare superiore.
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Raggio spettrale (**X4**)
@@ -486,6 +506,8 @@ quindi, di $S$. Osservando che $p(S) \leq \\vert S\\vert$ per ogni norma indotta
 matrice, la tesi si completa in virtù del punto $1$, da cui si ottiene:
 $1 = \\vert e^T S\\vert_{\infty} = \\vert S\\vert_1$.
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Cancellazione numerica e somma algebrica (**X3**)
@@ -509,6 +531,8 @@ $$y(1 + \varepsilon_y) = x_1(1 + \varepsilon_1) + x_2(1 + \varepsilon_2) = x_1 +
 Si ricava:
 
 $$\vert \varepsilon_y\vert  \leq \frac{\vert x_1\vert  + \vert x_2\vert }{\vert x_1 + x_2\vert }\varepsilon_x \equiv \kappa \varepsilon_x,\quad \varepsilon_x = max\{\vert \varepsilon_1\vert , \vert \varepsilon_2\vert \}$$
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -568,6 +592,8 @@ vettore $y \neq 0$ tale che $L^T y = x$. Segue pertanto che
 $$x^T D x = (L^T y)^T D (L^T y) = y^T LDL^T y = y^T A y > 0$$
 essendo $A$ sdp
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Precisione di macchina (**X2**)
@@ -598,6 +624,8 @@ $$u = \begin{cases} b^{1-m},\ in\ caso\ di\ troncamento,\\ \frac{1}{2} b^{1-m},\
 
 La **_precisione di macchina_** è definita da quantità $u$ in Teorema 1.4
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Condizionamento (di un problema) cap 1 (**X2**)
@@ -624,6 +652,8 @@ Osservare che:
   <!-- 1. nel caso in cui si utilizzi una precisione di macchina $u$ e si abbia
      $\kappa \approx u^{-1}$, qualunque risultato sarà privo di significato -->
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Fattorizzazione $QR$ (**X2**)
@@ -640,6 +670,8 @@ Data la matrice $A$, esistono:
 tali che:
 $$A = QR \equiv Q\binom{\hat{R}}{O}$$
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Metodo iterativo applicato ai sistemi lineari (**X2**)
@@ -648,11 +680,15 @@ $$A = QR \equiv Q\binom{\hat{R}}{O}$$
 
 [Raggio spettrale](#raggio-spettrale-x4)
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Matrice ortogonale (**X2**)
 
 **_Matrice ortogonale_** è una matrice invertibile tale che la sua trasposta coincide con la sua inversa.
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -667,19 +703,27 @@ dove, al solito, le diseguaglianze si intendono elemento per elemento.
 
 [Raggio spettrale](#raggio-spettrale-x4)
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Dimostrazione $sdp \Rightarrow LU$ (**X2**)
 
 ### [Dimostrazione Teorema 3.4](#dimostrazione-sdp-fattorizzabile)
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## def splitting regolare di matrice (**X2**)
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -687,17 +731,25 @@ dove, al solito, le diseguaglianze si intendono elemento per elemento.
 
 > Condizionamento cap 2
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## calcolare la norma uno e la norma infinito di una matrice
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
 ## matrici triangolari con codice
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -772,9 +824,13 @@ $$
 
 [Come funziona](https://yewtu.be/watch?v=8JdJoc3HMA8).
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## metodi iterativi per sistemi lineari
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
@@ -802,9 +858,13 @@ funzione in un punto.
    $$q=f'(x_0)-f'(x_0) \cdot x_0$$
 6. $$y = f'(x_0) \cdot x + f(x_0) - f'(x_0) \cdot x_0$$
 
+---
+
 [Return to questions list](#orale-calcolo-numerico)
 
 ## def norma indotta su matrice
+
+---
 
 [Return to questions list](#orale-calcolo-numerico)
 
