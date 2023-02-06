@@ -14,19 +14,19 @@ Lista di domande:
 7. [Chebyshev (**X4**)](#chebyshev-x4)
 8. [Matrici diagonali dominanti + dim (**X4**)](#matrici-diagonali-dominanti--dim-x4)
 9. [Cancellazione numerica e somma algebrica (**X3**)](#cancellazione-numerica-e-somma-algebrica-x3)
-10. [Dimostrazione $A=LDL^T$ (**X2**)](#dimostrazione-x2)
+10. [Dimostrazione $A=LDL^T$ (**X2**)](#dimostrazione-aldlt-x2)
 11. [Precisione di macchina (**X2**)](#precisione-di-macchina-x2)
 12. [Condizionamento (di un problema) cap 1 (**X2**)](#condizionamento-di-un-problema-cap-1-x2)
-13. [Fattorizzazione $QR$ (**X2**)](#fattorizzazione-x2)
+13. [Fattorizzazione $QR$ (**X2**)](#fattorizzazione-qr-x2)
 14. [Matrice ortogonale (**X2**)](#matrice-ortogonale-x2)
-15. [Dimostrazione $sdp \Rightarrow LU$ (**X2**)](#dimostrazione-x2-1)
+15. [Dimostrazione $sdp \Rightarrow LU$ (**X2**)](#dimostrazione-sdp-rightarrow-lu-x2)
 16. [def splitting regolare di matrice (**X2**)](#def-splitting-regolare-di-matrice-x2)
 17. [metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)](#metodo-di-newton-dim-convergenza-molteplicità-aitken-x2)
 18. [condizionamento del problema nei sistemi lineari](#condizionamento-del-problema-nei-sistemi-lineari)
 19. [calcolare la norma uno e la norma infinito di una matrice](#calcolare-la-norma-uno-e-la-norma-infinito-di-una-matrice)
 20. [matrici triangolari con codice](#matrici-triangolari-con-codice)
-21. [come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)](#come-si-ottiene-risp-prodotto-scalare-tra-gli-elementi-di-ed)
-22. [Differenze tra $LU$ e $LDL^T$](#differenze-tra-e)
+21. [come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)](#come-si-ottiene-vaf-risp-prodotto-scalare-tra-gli-elementi-di-v-ed-a)
+22. [Differenze tra $LU$ e $LDL^T$](#differenze-tra-lu-e-ldlt)
 23. [equazione retta tangente](#equazione-retta-tangente)
 24. [def norma indotta su matrice](#def-norma-indotta-su-matrice)
 25. [codice matrice ortogonale](#codice-matrice-ortogonale)
@@ -38,10 +38,6 @@ Domande fuori corso:
 3. [Metodo iterativo applicato ai sistemi lineari (**X2**)](#metodo-iterativo-applicato-ai-sistemi-lineari-x2)
 4. [metodi iterativi per sistemi lineari](#metodi-iterativi-per-sistemi-lineari)
 5. [M matrici e matrici monotone in generale (**X2**)](#m-matrici-e-matrici-monotone-in-generale-x2)
-
----
-
-[Return to questions list](#orale-calcolo-numerico)
 
 ## Polinomio interpolante (**X8**)
 
