@@ -18,19 +18,18 @@ Lista di domande:
 11. [Precisione di macchina (**X2**)](#precisione-di-macchina-x2)
 12. [Condizionamento (di un problema) cap 1 (**X2**)](#condizionamento-di-un-problema-cap-1-x2)
 13. [Fattorizzazione $QR$ (**X2**)](#fattorizzazione-qr-x2)
-14. [I sistemi lineari in generale, cap 3 fino a dim unicità du $A=LU$ (**X2**)](#i-sistemi-lineari-in-generale-cap-3-fino-a-dim-unicità-du-a-lu-x2)
-15. [Matrice ortogonale (**X2**)](#matrice-ortogonale-x2)
-16. [Dimostrazione $sdp \Rightarrow LU$ (**X2**)](#dimostrazione-sdp-rightarrow-lu-x2)
-17. [def splitting regolare di matrice (**X2**)](#def-splitting-regolare-di-matrice-x2)
-18. [metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)](#metodo-di-newton-dim-convergenza-molteplicità-aitken-x2)
-19. [condizionamento del problema nei sistemi lineari](#condizionamento-del-problema-nei-sistemi-lineari)
-20. [calcolare la norma uno e la norma infinito di una matrice](#calcolare-la-norma-uno-e-la-norma-infinito-di-una-matrice)
-21. [matrici triangolari con codice](#matrici-triangolari-con-codice)
-22. [come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)](#come-si-ottiene-va-f-risp-prodotto-scalare-tra-gli-elementi-di-v-ed-a)
-23. [Differenze tra $LU$ e $LDL^T$](#differenze-tra-lu-e-ldl-t)
-24. [equazione retta tangente](#equazione-retta-tangente)
-25. [def norma indotta su matrice](#def-norma-indotta-su-matrice)
-26. [codice matrice ortogonale](#codice-matrice-ortogonale)
+14. [Matrice ortogonale (**X2**)](#matrice-ortogonale-x2)
+15. [Dimostrazione $sdp \Rightarrow LU$ (**X2**)](#dimostrazione-sdp-rightarrow-lu-x2)
+16. [def splitting regolare di matrice (**X2**)](#def-splitting-regolare-di-matrice-x2)
+17. [metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)](#metodo-di-newton-dim-convergenza-molteplicità-aitken-x2)
+18. [condizionamento del problema nei sistemi lineari](#condizionamento-del-problema-nei-sistemi-lineari)
+19. [calcolare la norma uno e la norma infinito di una matrice](#calcolare-la-norma-uno-e-la-norma-infinito-di-una-matrice)
+20. [matrici triangolari con codice](#matrici-triangolari-con-codice)
+21. [come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)](#come-si-ottiene-va-f-risp-prodotto-scalare-tra-gli-elementi-di-v-ed-a)
+22. [Differenze tra $LU$ e $LDL^T$](#differenze-tra-lu-e-ldl-t)
+23. [equazione retta tangente](#equazione-retta-tangente)
+24. [def norma indotta su matrice](#def-norma-indotta-su-matrice)
+25. [codice matrice ortogonale](#codice-matrice-ortogonale)
 
 Domande fuori corso:
 
@@ -276,6 +275,8 @@ funzione sulla partizione $\Delta$ assegnata.
 [Return to questions list](#orale-calcolo-numerico)
 
 ## Risoluzione sistemi lineari (**X4**)
+
+> I sistemi lineari in generale, cap 3 fino a dim unicità di $A=LU$ (**X2**)
 
 ### Sistemi lineari
 
@@ -638,10 +639,6 @@ Data la matrice $A$, esistono:
 
 tali che:
 $$A = QR \equiv Q\binom{\hat{R}}{O}$$
-
-[Return to questions list](#orale-calcolo-numerico)
-
-## I sistemi lineari in generale, cap 3 fino a dim unicità du $A=LU$ (**X2**)
 
 [Return to questions list](#orale-calcolo-numerico)
 
