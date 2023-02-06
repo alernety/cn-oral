@@ -23,7 +23,7 @@ Lista di domande:
 16. [def splitting regolare di matrice (**X2**)](#def-splitting-regolare-di-matrice-x2)
 17. [metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)](#metodo-di-newton-dim-convergenza-molteplicità-aitken-x2)
 18. [condizionamento del problema nei sistemi lineari](#condizionamento-del-problema-nei-sistemi-lineari)
-19. [calcolare la norma uno e la norma infinito di una matrice](#calcolare-la-norma-uno-e-la-norma-infinito-di-una-matrice)
+19. [Calcolare la norma uno e la norma infinito di una matrice](#calcolare-la-norma-uno-e-la-norma-infinito-di-una-matrice)
 20. [matrici triangolari con codice](#matrici-triangolari-con-codice)
 21. [come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)](#come-si-ottiene-vaf-risp-prodotto-scalare-tra-gli-elementi-di-v-ed-a)
 22. [Differenze tra $LU$ e $LDL^T$](#differenze-tra-lu-e-ldlt)
@@ -731,7 +731,10 @@ dove, al solito, le diseguaglianze si intendono elemento per elemento.
 
 [Return to questions list](#orale-calcolo-numerico)
 
-## calcolare la norma uno e la norma infinito di una matrice
+## Calcolare la norma uno e la norma infinito di una matrice
+
+$$\|A\|_{1}=\underset{j=1,...,n}{max}\sum_{i=1}^{m}|a_{ij}|$$
+$$\|A\|_{\infty}=\underset{i=1,...,m}{max}\sum_{j=1}^{n}|a_{ij}|$$
 
 ---
 
