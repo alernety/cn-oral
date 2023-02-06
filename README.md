@@ -3,6 +3,44 @@
 I numeri successivi alla **X[0-9]** sono le volte in cui in diversi orali
 ha fatto quelle domande, quindi è più probabile che chieda.
 
+Lista di domande:
+
+1. [Polinomio interpolante (**X8**)](#polinomio-interpolante-x8)
+2. [Condizionamento nelle sistemi lineari (**X5**)](#condizionamento-nelle-sistemi-lineari-x5)
+3. [Condizionamento del problema in approssimazione (**X5**)](#condizionamento-del-problema-in-approssimazione-x5)
+4. [Spline (def, teorema dimensionalità, proprietà delle cubiche) (**X4**)](#spline-def-teorema-dimensionalità-proprietà-delle-cubiche-x4)
+5. [Risoluzione sistemi lineari (**X4**)](#risoluzione-sistemi-lineari-x4)
+6. [Newton-Cotes (**X4**)](#newton-cotes-x4)
+7. [Chebyshev (**X4**)](#chebyshev-x4)
+8. [Matrici diagonali dominanti + dim (**X4**)](#matrici-diagonali-dominanti-dim-x4)
+9. [Metodo iterativo Google pagerank (**X4**)](#metodo-iterativo-google-pagerank-x4)
+10. [Raggio spettrale (**X4**)](#raggio-spettrale-x4)
+11. [Cancellazione numerica e somma algebrica (**X3**)](#cancellazione-numerica-e-somma-algebrica-x3)
+12. [Dimostrazione $A=LDL^T$ (**X2**)](#dimostrazione-a-ldl-t-x2)
+13. [Precisione di macchina (**X2**)](#precisione-di-macchina-x2)
+14. [Condizionamento (di un problema) cap 1 (**X2**)](#condizionamento-di-un-problema-cap-1-x2)
+15. [Fattorizzazione $QR$ (**X2**)](#fattorizzazione-qr-x2)
+16. [I sistemi lineari in generale, cap 3 fino a dim unicità du $A=LU$ (**X2**)](#i-sistemi-lineari-in-generale-cap-3-fino-a-dim-unicità-du-a-lu-x2)
+17. [Metodo iterativo applicato ai sistemi lineari (**X2**)](#metodo-iterativo-applicato-ai-sistemi-lineari-x2)
+18. [Matrice ortogonale (**X2**)](#matrice-ortogonale-x2)
+19. [M matrici e matrici monotone in generale (**X2**)](#m-matrici-e-matrici-monotone-in-generale-x2)
+20. [Dimostrazione $sdp \Rightarrow LU$ (**X2**)](#dimostrazione-sdp-rightarrow-lu-x2)
+21. [def splitting regolare di matrice (**X2**)](#def-splitting-regolare-di-matrice-x2)
+22. [metodo di newton (dim convergenza, molteplicità, Aitken) (**X2**)](#metodo-di-newton-dim-convergenza-molteplicità-aitken-x2)
+23. [condizionamento del problema nei sistemi lineari](#condizionamento-del-problema-nei-sistemi-lineari)
+24. [calcolare la norma uno e la norma infinito di una matrice](#calcolare-la-norma-uno-e-la-norma-infinito-di-una-matrice)
+25. [matrici triangolari con codice](#matrici-triangolari-con-codice)
+26. [condizionamento delle matrici](#condizionamento-delle-matrici)
+27. [come si ottiene $Va=f$ (risp: prodotto scalare tra gli elementi di $V$ ed $a$)](#come-si-ottiene-va-f-risp-prodotto-scalare-tra-gli-elementi-di-v-ed-a)
+28. [Differenze tra $LU$ e $LDL^T$](#differenze-tra-lu-e-ldl-t)
+29. [metodi iterativi per sistemi lineari](#metodi-iterativi-per-sistemi-lineari)
+30. [condizionamento cap 2](#condizionamento-cap-2)
+31. [equazione retta tangente](#equazione-retta-tangente)
+32. [def norma indotta su matrice](#def-norma-indotta-su-matrice)
+33. [approssimazione polinomiale (inizio cap 4)](#approssimazione-polinomiale-inizio-cap-4)
+34. [condizionamento del problema in generale](#condizionamento-del-problema-in-generale)
+35. [codice matrice ortogonale](#codice-matrice-ortogonale)
+
 ## Polinomio interpolante (**X8**)
 
 Ascisse tra di loro distinte:
